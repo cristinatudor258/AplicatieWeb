@@ -1,4 +1,4 @@
-﻿var appUrl = "https://apptestareonline.azurewebsites.net";
+﻿var appUrl = "https://apptestare.azurewebsites.net/";
 
 var rapoarteApp = angular.module('rapoarteApp', ['ngSanitize']
 ).config(function () {

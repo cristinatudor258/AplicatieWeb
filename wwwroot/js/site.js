@@ -1,4 +1,4 @@
-﻿var appUrl = "https://apptestareonline.azurewebsites.net";
+﻿var appUrl = "https://apptestare.azurewebsites.net/";
 
 var testeApp = angular.module('testeApp', []);
     testeApp.controller('testeController', function ($scope, $http) {
