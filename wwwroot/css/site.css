@@ -24,10 +24,10 @@ a {
     color: #b3ccff;
 }
 
-body{
-    background-image: url(../images/fundal.jpg);
+body {
+    background-color: #007bff8c!important;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
@@ -40,17 +40,15 @@ body{
     overflow-x:hidden;
 }
 
-.acasaContainer, .quizCompleted, .questionContainer, .login, .rapoarteContainer {
+.acasaContainer, .quizCompleted, .questionContainer, .login, .rapoarteContainer, .intrebariContainer {
     overflow-y: auto;
     max-height: 80vh;
 }
 
-
-/* Lista teste pagina principala
+    /* Lista teste pagina principala
 -------------------------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
-
-ol.gradient-list > li, ol.gradient-list > li::before {
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+    ol .gradient-list > li, ol.gradient-list > li::before {
     box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
 }
 
@@ -63,7 +61,6 @@ ol.gradient-list {
 }
 
     ol.gradient-list > li {
-        background: white;
         border-radius: 0 0.5rem 0.5rem 0.5rem;
         counter-increment: gradient-counter;
         margin-top: 1rem;
@@ -434,7 +431,7 @@ html {
 
 @media screen and (min-width: 769px) {
     .questionBox, .acasaContainer {
-        margin:0% 10%;
+        margin:1% 10%;
         /*align-items: center;
         justify-content: center;*/
     }
@@ -457,14 +454,14 @@ html {
 
 /* Rapoarte
 -------------------------------------------------- */
-.rapoarteContainer {
-    margin: auto;
+.rapoarteContainer, .intrebariContainer, .noteContainer {
+    margin: 0% 5%;
     min-height: 30rem;
     background: #fafafa;
     position: relative;
     border-radius: 0.5rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    padding: 5%;
+    padding: 3%;
 }
 
 .afisareRapoarte {
@@ -490,4 +487,23 @@ html {
     padding:8%;
 }
 /* Rapoarte
+-------------------------------------------------- */
+
+
+/* Administrare intrebari 
+-------------------------------------------------- */
+
+.modal-content {
+    border: 2px solid #343a40 !important;
+}
+
+.modalBlur{
+    -webkit-filter: blur(8px);
+}
+
+/*.intrebariContainer.modalDesaturate > *:not(.modal) {
+    -webkit-filter: saturate(0%);
+}*/
+
+/* Administrare intrebari 
 -------------------------------------------------- */
