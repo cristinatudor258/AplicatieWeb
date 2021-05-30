@@ -23,7 +23,7 @@ namespace AplicatieWeb.Areas.Identity
                 services.AddDefaultIdentity<AplicatieUtilizator>(options =>
                 {
                     options.User.RequireUniqueEmail = true;
-                    options.SignIn.RequireConfirmedEmail = true;
+                    options.SignIn.RequireConfirmedEmail = false;
                     options.Tokens.EmailConfirmationTokenProvider = "emailconfirmation";
                     options.Password.RequireUppercase = false;
                     options.Password.RequireLowercase = false;
