@@ -32,9 +32,9 @@ namespace AplicatieWeb
         {
             services.AddMvc();
 
-            var emailConfig = Configuration
-        .GetSection("EmailConfiguration");
-            services.AddSingleton(emailConfig);
+        //    var emailConfig = Configuration
+        //.GetSection("EmailConfiguration");
+        //    services.AddSingleton(emailConfig);
 
             //    services.AddScoped<IEmailSender, EmailSender>();
 
