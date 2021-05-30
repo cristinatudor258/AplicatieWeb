@@ -14,5 +14,6 @@ namespace AplicatieWeb.Models
         public int IdTest { get; set; }
         public int Dificultate { get; set; }
         public int Lungime { get; set; }
+        public bool IsDeleted { get; set; }
     }
 }

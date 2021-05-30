@@ -42,5 +42,7 @@ namespace AplicatieWeb.Models
         public DbSet<Intrebari> Intrebari { get; set; }
         public DbSet<Rezultate> Rezultate { get; set; }
 
+        public DbSet<AspNetUsers> AspNetUsers { get; set; }
+
     }
 }
