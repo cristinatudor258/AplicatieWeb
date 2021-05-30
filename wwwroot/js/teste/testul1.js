@@ -1,8 +1,9 @@
 ﻿//testul 1 - vue.js
 
-var appUrl = "https://apptestareonline.azurewebsites.net";
+var appUrl = "https://apptestare.azurewebsites.net/";
 
 window.onload = function () {
+
     var appT1 = new Vue({
         el: "#appT1",
         data: {
