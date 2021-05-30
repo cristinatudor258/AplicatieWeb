@@ -31,7 +31,12 @@ namespace AplicatieWeb.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Administrare()
+        {
+            return View();
+        }
+
+        public IActionResult Note()
         {
             return View();
         }
