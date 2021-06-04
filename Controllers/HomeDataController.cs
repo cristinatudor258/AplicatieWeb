@@ -371,7 +371,7 @@ namespace AplicatieWeb.Controllers
                         factor = "Lungime test",
                         valoare = r.LungimeTest,
                         rezultat = r.Nota
-                    }).Distinct().ToList();
+                    }).ToList();
                 else if(tipRaport.IndexOf("li") != -1)
                 {
                     rezultate = _db.Rezultate.Where(r => r.IdTest == test).Select(r => new RezultateClass
@@ -379,7 +379,7 @@ namespace AplicatieWeb.Controllers
                         factor = "Lungime intrebari",
                         valoare = r.LungimeIntrebari,
                         rezultat = r.Nota
-                    }).Distinct().ToList();
+                    }).ToList();
                 }
                 else if (tipRaport.IndexOf("ac") != -1)
                 {
@@ -388,7 +388,7 @@ namespace AplicatieWeb.Controllers
                         factor = "Alternare complexitate",
                         valoare = r.AlternareDificultate,
                         rezultat = r.Nota
-                    }).Distinct().ToList();
+                    }).ToList();
                 }
 
                 return Ok(rezultate);
