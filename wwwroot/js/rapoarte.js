@@ -44,7 +44,7 @@ rapoarteApp.controller('rapoarteController', function ($scope, $http) {
                         valoriFactor.push(0);
                         suma1 += valoriDuplicate[i].nota;
                         lungime1++;
-                        if (valoriDuplicate[i].nota == 10)
+                        if (valoriDuplicate[i].nota == notaMaxima)
                             nrNoteMaxime[0]++;
                     }
                     else if (valoriDuplicate[i].valoriFactor == 1){
